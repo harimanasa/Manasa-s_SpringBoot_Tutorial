@@ -1,4 +1,5 @@
-package io.datajek.spring.basics.movie_recommender_system.lesson5_PostConstruct_PreDestroy_Logger;
+package io.datajek.spring.basics.movie_recommender_system.lesson6_Singleton_ProtoType;
+
 
 import jakarta.annotation.PostConstruct;
 import jakarta.annotation.PreDestroy;
@@ -17,6 +18,7 @@ public class ContentBasedFilter implements Filter{
     }
 
     @PostConstruct
+
     private void postConstruct() {
         //load movies into cache
         logger.info("In ContentBasedFilter postConstruct method");

@@ -1,4 +1,6 @@
-package io.datajek.spring.basics.movie_recommender_system.lesson5_PostConstruct_PreDestroy_Logger;
+package io.datajek.spring.basics.movie_recommender_system.lesson6_Singleton_ProtoType;
+
+import java.util.Arrays;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
