@@ -23,14 +23,14 @@ public class MovieRecommenderSystemApplication {
 		RecommenderImplementation recommender = appContext.getBean(RecommenderImplementation.class);
 
 //		call method to get recommendations
-//		String[] result = recommender.recommendMovies("Finding Dory");
+		String[] result = recommender.recommendMovies("Finding Dory");
 
 //		display results
-//		System.out.println(Arrays.toString(result));
+		System.out.println(Arrays.toString(result));
 
-		/* This works */
-		Filter testFiler = appContext.getBean(ContentBasedFilter.class);
-		System.out.println("This runs " + Arrays.toString(testFiler.getRecommendations("Finding Dory")));
+//		/* This works */
+//		Filter testFiler = appContext.getBean(ContentBasedFilter.class);
+//		System.out.println("This runs " + Arrays.toString(testFiler.getRecommendations("Finding Dory")));
 
 		/* You need to comment the below | This errors out because it is not defined as @Component, so not found in beans.factory definition */
 //		Filter testFiler2 = appContext.getBean(CollaborativeFilter.class);
