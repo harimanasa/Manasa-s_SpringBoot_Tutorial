@@ -1,4 +1,4 @@
-package io.datajek.spring.basics.movie_recommender_system.lesson_CreatingCustomExceptions;
+package io.datajek.spring.basics.movie_recommender_system.lesson9_CreatingCustomExceptions;
 
 public class PlayerNotFoundException extends RuntimeException{
 
